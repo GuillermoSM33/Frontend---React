@@ -1,11 +1,15 @@
-import React from 'react';
 import View from './users/view'; 
+import Add from './users/add';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const Page: React.FC = () => {
   return (
-    <div>
-      <View />
-    </div>
+    <Router>
+      <Routes>
+      <Route path='/view' element={<View/>} />
+      <Route path='/Add' element={<Add />}/>
+      </Routes>
+    </Router>
   );
 };
 
