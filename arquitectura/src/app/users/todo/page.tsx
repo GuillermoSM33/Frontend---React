@@ -4,7 +4,7 @@ import React, { useReducer, useState, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 
 interface ITask{
-    id: any;
+    id: number;
     text: string;
     completed: boolean;
 }
@@ -12,8 +12,13 @@ interface ITask{
 // Define the initial state
 const initialState: ITask[] = [];
 
+type Action = 
+    | { type: 'ADD_TASK'; payload: ITask }
+    | { type: 'TOGGLE_TASK'; payload: number }
+    | { type: 'DELETE_TASK'; payload: number };
+
 // Define the reducer function
-const todoReducer = (state: ITask[], action: any) => {
+const todoReducer = (state: ITask[], action: Action) => {
     switch (action.type) {
         case 'ADD_TASK':
             return [...state, action.payload];
