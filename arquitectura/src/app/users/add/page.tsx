@@ -71,7 +71,15 @@ function AddUser() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg bg-white">
+=======
+    <>
+    <head>
+      <title>Agregar Usuario</title>
+    </head>
+    <div className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+>>>>>>> b23b2119e2c3e2c0dfdc04986445b7ae702fa46b
       <h2 className="text-2xl font-bold mb-4 text-center">Agregar Usuario</h2>
       {message && <p className="text-green-500 mb-4">{message}</p>}
       {error && <p className="text-red-500 mb-4">{error}</p>}
@@ -145,6 +153,7 @@ function AddUser() {
         </Link>
       </form>
     </div>
+    </>
   );
 }
 

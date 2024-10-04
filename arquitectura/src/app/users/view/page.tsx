@@ -53,7 +53,11 @@ function UserView() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg bg-white">
+    <>
+    <head>
+      <title>Usuarios Registrados</title>
+    </head>
+    <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
       <h1 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
         Usuarios Registrados
       </h1>
@@ -106,6 +110,7 @@ function UserView() {
         Regresar al Inicio
       </Link>
     </div>
+    </>
   );
 }
 
