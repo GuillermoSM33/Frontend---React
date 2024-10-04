@@ -71,7 +71,7 @@ function AddUser() {
   };
 
   return (
-    <div className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg bg-white">
       <h2 className="text-2xl font-bold mb-4 text-center">Agregar Usuario</h2>
       {message && <p className="text-green-500 mb-4">{message}</p>}
       {error && <p className="text-red-500 mb-4">{error}</p>}

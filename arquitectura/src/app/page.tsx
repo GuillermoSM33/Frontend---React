@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Page: React.FC = () => {
   return (
-    <div className="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
+    <div className="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg bg-white">
       <h1 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Página Principal</h1>
       <ul className="space-y-4">
         <li>
